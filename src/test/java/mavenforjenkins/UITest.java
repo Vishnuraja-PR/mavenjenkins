@@ -23,7 +23,7 @@ public class UITest
 		{
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions opt=new ChromeOptions();
-			//opt.addArguments("--headless");
+			opt.addArguments("--headless");
 			opt.addArguments("--no-sandbox");
 			opt.addArguments("--disable-dev-shm-usage");
 			driver=new ChromeDriver(opt);
